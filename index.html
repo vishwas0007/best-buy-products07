@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Buy Products - Admin Panel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h1>Best Buy Products</h1>
+        <button id="admin-login-button">Admin Panel</button>
+    </nav>
+
+    <!-- Front Page -->
+    <section id="front-page">
+        <h2>Available Products</h2>
+        <div id="product-display" class="product-grid"></div>
+    </section>
+
+    <!-- Admin Login Popup -->
+    <div id="admin-login-popup" class="popup hidden">
+        <h2>Admin Login</h2>
+        <input type="password" id="admin-password" placeholder="Enter Password">
+        <button id="admin-submit">Login</button>
+        <p id="admin-error" class="error hidden">Incorrect Password!</p>
+    </div>
+
+    <!-- Admin Panel -->
+    <section id="admin-section" class="hidden">
+        <h2>Admin Panel</h2>
+        <button id="go-back-btn">Go Back</button>
+
+        <div>
+            <h3>Add Category</h3>
+            <input type="text" id="new-category" placeholder="Category Name">
+            <button id="add-category-btn">Add Category</button>
+        </div>
+
+        <div>
+            <h3>Categories</h3>
+            <ul id="category-list"></ul>
+        </div>
+
+        <div>
+            <h3>Add/Edit Product</h3>
+            <input type="hidden" id="edit-product-index">
+            <input type="text" id="product-name" placeholder="Product Name">
+            <input type="number" id="product-price" placeholder="Price">
+            <input type="text" id="product-image" placeholder="Image URL">
+            <input type="text" id="product-buy-link" placeholder="Buy Now Link">
+            <select id="product-category"></select>
+            <button id="add-product-btn">Add Product</button>
+            <button id="update-product-btn" class="hidden">Update Product</button>
+        </div>
+
+        <div>
+            <h3>Products</h3>
+            <ul id="product-list"></ul>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
